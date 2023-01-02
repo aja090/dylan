@@ -1,0 +1,470 @@
+:root{
+    --primerycolor:#000000;
+    --seccolor:#097bac;
+    --thcolor:#68c6ff;
+    --fourcolor:#f9f9f6;
+    --fifcolor:#000000;
+    --cardcolor:#ffe8cc;
+    --padding: 7%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--thcolor);
+}
+
+/*------------------------------
+*---------------------HOME SECTION----------
+--------------------------------------------
+------------------------------*/
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fourcolor);
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: var(--primerycolor);
+}
+
+h2 {
+    font-size: 2.2rem;
+    cursor: pointer;
+    letter-spacing: 0.12rem;
+}
+
+nav {
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--fourcolor);
+    border-bottom: 1px solid var(--thcolor);
+    z-index: 999999999;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+ul {
+    padding-left: 8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--thcolor);
+    text-transform: capitalize;
+    transition: 0.4s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primerycolor);
+}
+
+.date {
+    background-color: var(--primerycolor);
+    color: var(--thcolor);
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    margin-left: 4.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.date:hover {
+    background-color: transparent;
+    border: 2px solid var(--primerycolor);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.continer-text {
+    position: relative;
+    bottom: 70px;
+}
+
+h1 {
+    margin:1.7rem 4.5rem;
+    font-size: 2.7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 4.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin-left: 4.5rem;
+    letter-spacing: 0.12rem;
+    color: var(--seccolor);
+}
+
+.social{
+    margin-top: 3.5rem;
+    margin-right: 10rem;
+}
+
+.social img {
+    margin-left: 2.5rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.home .continer-img {
+    width: 35%;
+    height: 70%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.home .continer-img img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: bottom 1s ,left 1.3s;
+    cursor:pointer;
+}
+
+.home .continer-img:hover .me {
+    bottom: 20%;
+    left: 38%;
+}
+
+/*------------------------------
+*---------------------ABOUT ME SECTION----------
+-----------------------------------------------
+------------------------------*/
+
+.about-me {
+    background-color: var(--fourcolor);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me .continer-imgs {
+    width: 35%;
+}
+
+.about-me .continer-imgs img {
+    width: 90%;
+}
+
+.about-me .continer-texts {
+    width: 35%;
+}
+
+p {
+    color: var(--seccolor);
+    letter-spacing: 1px;
+    line-height: 1,8rem;
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.about-me h1 {
+    font-size: 2.1rem;
+}
+
+/*------------------------------
+*---------------------SERVICES SECTION----------
+------------------------------------------------
+------------------------------*/
+
+.Services{
+    background-color: var(--fourcolor);
+    padding: 2rem var(--padding);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    width: 230px;
+    background-color: var(--cardcolor);
+    padding: 0.8rem 1.2rem;
+    border-radius: 22px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.cards i {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primerycolor);
+    margin: 2rem;
+}
+
+.cards:hover {
+    transform: scale(1.2);
+}
+
+/*------------------------------
+*---------------------FOOTER SECTION----------
+----------------------------------------------
+------------------------------*/
+
+footer {
+    padding: 2rem var(--padding);
+    background-color: var(--fourcolor);
+    padding-top: 15rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p {
+    color: var(--thcolor);
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.footer-content .end {
+    color: var(--primerycolor);
+    margin-top: 1rem;
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--seccolor);
+}
+
+footer h2 {
+    font-size: 23px;
+}
+
+/*------------------------------
+*---------------------HAMBURGER MENU----------
+---------------------------------------------------
+------------------------------*/
+
+#menu {
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: var(--primerycolor);
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+#menu.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+#menu.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px)
+}
+
+#menu.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+#menu.is-active span {
+    background-color: var(--seccolor);
+}
+
+/*------------------------------
+*---------------------MEDIA QUERY SECTION----------
+---------------------------------------------------
+------------------------------*/
+
+@media screen and (max-width :950px) {
+    :root {
+        padding: 1.5rem;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    .home .continer-img img{
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--fourcolor);
+        border-bottom: 1px solid var(--thcolor);
+        z-index: 100;
+    }
+  nav > a {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--fourcolor);
+    }
+
+    nav ul.is-active  {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 100px;
+        text-align: center;
+        margin-left: 20px;
+        font-size: 26px;
+    }
+
+    .continer-text {
+        bottom: 0;
+    }
+
+    .social {
+        margin-right: -2.8rem;
+        margin-top: 50px;
+    }
+
+    h3 {
+        margin-bottom: 50px;
+    }
+
+    .about-me h1 {
+        font-size: 2.7rem;
+        margin-left: 2rem;
+    }
+
+    #menu {
+        display: block;
+        margin-left: 10rem;
+    }
+
+    .about-me .continer-imgs img {
+        display: none;
+    }
+
+    .about-me .continer-texts {
+        width: 100%;
+    }
+
+    .about-me h1 {
+        font-size: 3rem;
+    }
+
+   .about-me p {
+        font-size: 1.7rem;
+    }
+
+    .about-me h5 {
+        font-size:  2.5rem;
+        margin-right: 20rem;
+    }
+
+    .box {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .cards {
+        width: 230px;
+        background-color: var(--cardcolor);
+        padding: 0.8rem 1.2rem;
+        border-radius: 22px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .cards:hover {
+        transform: scale(1.1);
+    }
+    
+    .footer-content p {
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    .footer-content p {
+        font-size: 14.3px;
+    }
+
+}
